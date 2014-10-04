@@ -32,10 +32,11 @@ int main() {
     auto callAndPrintWithOne = [] 
     	(int(*lambda)(int value)){cout << lambda(1) << endl;};
     callAndPrintWithOne(addOne);
-    
+   
     /*Returns a new int array
     The new array has elements of the old array
     After having the function getInt applied */
+    /*
     auto mapInt = [] (int array[], int(*getInt)(int))
     				{	
     					int newArray[4];
@@ -44,7 +45,7 @@ int main() {
     					return *newArray;
     					};
     auto resultArray[4] = mapInt(simpArray, addOne);
-    printArray(resultArray);
+    printArray(resultArray); */
     
 	return 0;
 }
